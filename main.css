@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, .statistics-number, .billboard-button p {
+    font-weight: 900;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    padding: 96px 0 32px 0;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin-left: auto;  /*Centralizar conteúdo na página*/
+    margin-right: auto; /*Centralizar conteúdo na página*/
+}
+
+.gallery,
+.description-wrapper,
+.comments {
+    background-color: #F4F4F4;
+}
+
+header,
+footer {
+    background-color: #2A2927;
+    height: 30px;
+}
+
+header .container,
+footer {
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #F4F4F4;
+}
+
+.billboard-button,
+.billboard-box {
+    box-shadow: 4px 4px 8px #000000;
+}
+
+header .container,
+.top-section .container,
+.top-secondary-section .container ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+header img {
+    height: 20px;
+}
+
+.social-media li {
+    display: inline;
+    margin-left: 8px;
+}
+
+.social-media li a {
+    text-decoration: none;
+}
+
+.top-section {
+    background: #8C030E url(images/shanghai-sunset-billboard.jpg) no-repeat center top; /*Background shorthand: color image repeat position */
+    height: 550px;
+    max-width: 1280;
+}
+
+.top-section .container {
+    height: 100%;
+}
+
+.billboard {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.billboard-box {
+    color: #8C030E;
+    background-color: #F4F4F4;
+    width: 550px;
+    height: 300px;
+    border-radius: 30px;
+    position: relative; /*Centralizar verticalmente: elemento pai*/
+}
+
+.billboard-text {
+    padding: 0 24px;
+    position: absolute; /*Centralizar verticalmente: elemento filho: position top transform*/
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.billboard-button {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 90px;
+}
+
+
+.billboard-button p,
+footer {
+    text-align: center;
+}
+
+.billboard-button p {
+    background-color: #F2BE05;
+    text-align: center;
+    width: 370px;
+    padding: 12px;
+}
+
+.billboard-button a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.billboard-img img{
+    height: 550px;
+}
+
+.top-secondary-section {
+    color: #F4F4F4;
+    background-color: #8C030E;
+    border-top: 1px solid #F4F4F4; /*Border shorthand: width style color*/
+}
+
+.billboard-text p,
+.top-secondary-section .container,
+.statistics-content {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.top-secondary-section li {
+    width: 20%;
+}
+
+
+.gallery img {
+    height: 100%;
+}
+
+.description,
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.description-element {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.description img {
+    height: 100px;
+}
+
+.comments .container {
+    padding-bottom: 96px;
+}
+.comments-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #2A2927;
+    border-radius: 31px;
+}
+
+.comments-box {
+    background-color: #ffffff;
+    border-radius: 30px 0 0 30px;
+    padding: 32px;
+    width: 70%;
+}
+
+.comments-content {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.comments-content img {
+    padding-right: 16px;
+    width: 125px;
+}
+
+.statistics {
+    color: #F4F4F4;
+    padding: 32px;
+    width: 30%;
+}
+
+.statistics-number {
+    font-size: 64px;
+}
