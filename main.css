@@ -9,7 +9,7 @@ h1,
 h2,
 nav,
 .statistics-number,
-.billboard-button p {
+.billboard-button a {
     font-weight: 900;
     font-family: 'Black Han Sans', sans-serif;
 }
@@ -43,10 +43,10 @@ h3 {
     background-color: #F4F4F4;
 }
 
-form input, 
-form textarea,
-#contact-box,
-.comments-box {
+input, 
+textarea,
+.comments-box,
+#contact-box {
     background-color: #ffffff;
 }
 
@@ -59,7 +59,7 @@ footer,
 button,
 .statistics,
 .top-secondary-section,
-header nav li a, 
+nav li a, 
 header .container,
 footer {
     color: #ffffff;
@@ -71,7 +71,7 @@ header .container {
     padding-bottom: 12px;
 }
 
-.billboard-button,
+.billboard-button a,
 .billboard-box {
     box-shadow: 4px 4px 8px #000000;
 }
@@ -88,27 +88,18 @@ header img {
     height: 20px;
 }
 
-header nav li {
+nav li {
     display: inline;
     padding: 12px;
 }
 
-header nav li:hover {
+nav li:hover {
     background-color: #1c1c1c;
 }
 
-header nav li a {
+nav li a {
     text-decoration: none;
     font-weight: 600;
-}
-
-.social-media li {
-    display: inline;
-    margin-left: 8px;
-}
-
-.social-media li a {
-    text-decoration: none;
 }
 
 .top-section {
@@ -140,33 +131,26 @@ header nav li a {
     transform: translate(0,-50%);
 }
 
-.billboard-button {
+.billboard-button a {
     position: absolute;
     margin-top: -25px;
     margin-left: 90px;
 }
 
-
-.billboard-button p,
 footer {
     text-align: center;
 }
 
-.billboard-button p {
-    background-color: #F2BE05;
-    text-align: center;
-    width: 370px;
-    padding: 12px;
-}
-
 .billboard-button:hover {
     transform: scale(102%);
-    transition: ease-in-out all 0.3s;
+    transition: ease all 0.3s;
 }
 
 .billboard-button a {
     color: #000000;
     text-decoration: none;
+    background-color: #F2BE05;
+    padding: 12px 36px;
 }
 
 .billboard-img img{
@@ -206,6 +190,17 @@ footer {
 }
 
 .img-one,
+.img-four,
+.txt-five {
+    height: 200px;
+}
+
+.img-two,
+.img-three {
+    height: 300px;
+}
+
+.img-one,
 .img-two,
 .img-three,
 .img-four {
@@ -218,7 +213,6 @@ footer {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    height: 200px;
 }
 
 .img-two {
@@ -226,7 +220,6 @@ footer {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 4;
-    height: 300px;    
 }
 
 .img-three {
@@ -234,7 +227,6 @@ footer {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 6;
-    height: 300px;    
 }
 
 .img-four {
@@ -242,7 +234,6 @@ footer {
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 6;
-    height: 200px;    
 }
 
 .txt-five {
@@ -250,20 +241,25 @@ footer {
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 6;
-    height: 200px;
     padding: 8px;
 }
 
-.description {
+.description,
+.description-element,
+.comments-wrapper,
+.comments-content,
+footer {
     display: flex;
+    align-items: center;
+}
+
+.description {
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .description-element {
     width: 500px;
-    display: flex;
-    align-items: center;
     padding: 16px 0;
 }
 
@@ -274,10 +270,6 @@ footer {
 .comments .container {
     padding-bottom: 96px;
 }
-.comments-wrapper {
-    display: flex;
-    align-items: center;
-}
 
 .billboard-box,
 .comments-wrapper,
@@ -285,15 +277,18 @@ footer {
     border-radius: 20px;
 }
 
+.comments-box,
+.statistics,
+#contact-box {
+    padding: 32px;
+}
+
 .comments-box {
     border-radius: 20px 0 0 20px;
-    padding: 32px;
     width: 70%;
 }
 
 .comments-content {
-    display: flex;
-    align-items: center;
     padding: 16px;
 }
 
@@ -303,7 +298,6 @@ footer {
 }
 
 .statistics {
-    padding: 32px;
     width: 30%;
 }
 
@@ -327,7 +321,6 @@ footer {
 
 #contact-box {
     width: 400px;
-    padding: 32px;
     margin: auto;
 }
 
@@ -347,10 +340,6 @@ textarea {
     color: #000000;
 }
 
-.fill-out:focus, textarea:focus {
-    border: none;
-}
-
 textarea {
     resize: none;
     height: 100px;
@@ -368,13 +357,12 @@ button {
 
 button:hover {
     background-color: #b22632;
-    transition: ease-in-out all 0.2s;
+    transition: ease all 0.2s;
 }
 
 footer,
 label {
     font-size: 12px;
-    align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
 }
