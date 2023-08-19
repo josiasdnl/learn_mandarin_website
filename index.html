@@ -22,34 +22,20 @@
                 <div>
                     <img src="./images/logo.png" alt="Instituto Sun Tzu">
                 </div>
-                <div class="social-media">
-                    <ul>
-                        <li>
-                            <a href="#" title="Facebook">
-                                <img src="./images/social-media-facebook.png" alt="Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Instagram">
-                                <img src="./images/social-media-intagram.png" alt="Instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Linkedin">
-                                <img src="./images/social-media-linkedin.png" alt="Linkedin">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Youtube">
-                                <img src="./images/social-media-youtube.png" alt="Youtube">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="WhatsApp">
-                                <img src="./images/social-media-whatsapp.png" alt="WhatsApp">
-                            </a>
-                        </li>
-                    </ul>
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#" title="Cursos">Cursos</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Blog">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Área do Aluno">Área do Aluno</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -67,7 +53,7 @@
                         </div>
                     </div>
                     <div class="billboard-button">
-                        <a href="#" title="Entre em contato">
+                        <a href="#contact-box" title="Entre em contato">
                             <p>GANHE UMA AULA EXPERIMENTAL</p>
                         </a>
                     </div>
@@ -112,15 +98,14 @@
             <div class="container">
                 <h2>UM HORIZONTE DE POSSIBILIDADES</h2>
                     <div class="gallery-wrapper">
-                        <img src="./images/img-crowd.jpg" alt="Rua cheia de pessoas na China">
-                        <img src="./images/img-handshake.jpg" alt="Duas pessoas apertando a mão">
-                        <img src="./images/img-cuisine.jpg" alt="Pratos típicos chineses">
-                        <img src="./images/img-tourism.jpg" alt="Turista tirando foto">
-                        <img src="./images/img-chinese-movie.jpg" alt="Cena de um filme chinês">
-                        <p>
-                            Cerca de <strong>uma em cada sete pessoas</strong> no mundo fala mandarim e, atualmente, a China tem se destacado como <strong>uma das principais  economias mundiais,</strong> tornando o mandarim um diferencial estratégico para o sucesso profissional. 
-                            <br>Aprender mandarim pode dar a você a chance de <strong>mergulhar em uma cultura rica</strong> e abre caminho para compreender profundamente uma nação que molda o cenário mundial.
-                        </p>
+                            <img src="./images/img-crowd.jpg" alt="Rua cheia de pessoas na China" class="img-one">
+                            <img src="./images/img-handshake.jpg" alt="Duas pessoas apertando a mão" class="img-two">
+                            <img src="./images/img-cuisine.jpg" alt="Pratos típicos chineses" class="img-three">
+                            <img src="./images/img-tourism.jpg" alt="Turista tirando foto" class="img-four">
+                            <p class="txt-five">
+                                Cerca de <strong>uma em cada sete pessoas</strong> no mundo fala mandarim e a China tem se destacado como <strong>uma das principais  economias mundiais.</strong>
+                                <br>Aprender mandarim oferece a chance de <strong>mergulhar em uma cultura rica</strong> e abre caminho para compreender uma nação que molda o cenário mundial.
+                            </p>
                     </div>
                 </div>
         </section>
@@ -250,20 +235,22 @@
                 </div>
             </div>
         </section>
-        <div class="container">
-            <section>
-                <div class="contact-box">
+        <section class="contact">
+            <div class="container">
+                <div id="contact-box">
                     <h2>ENTRE EM CONTATO</h2>
                     <form>
-                        <input type="text" placeholder="Seu nome" required>
-                        <input type="email" placeholder="E-mail" required>
-                        <input type="tel" placeholder="Telefone" required>
+                        <input class="fill-out" type="text" placeholder="Seu nome" required>
+                        <input class="fill-out" type="email" placeholder="E-mail" required>
+                        <input class="fill-out" type="tel" placeholder="Telefone" required>
                         <textarea placeholder="Escreva uma mensagem"></textarea>
+                        <input type="checkbox" id="checkbox" required>
+                        <label for="checkbox">Li e aceito os termos e condições da <a href="#">Política de Privacidade</a></label>
                         <button type="submit">Enviar</button>
                     </form>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
